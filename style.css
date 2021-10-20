@@ -21,13 +21,98 @@
     width: 100%;
     font-size: 62.5%;
   }
+  body {
+    width:100%;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background: var(--clr-gradient-light);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  button, input, select, textarea {
+    font-family: inherit;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  .container {
+    max-width: 30em;
+  }
+  .main-content {
+    padding: 0 2em;
+  }
+  .logo {
+    padding: 2em;
+  }
+  .logo > img {
+    width: 7em;
+  }
+  .hero__img > img {
+    object-fit: cover;
+    object-position: 50% 60%; 
+    height: 26vh;
+    width: 100%;
+  }
+  .main-content__title {
+    font-size: 4.6rem;
+    text-transform: uppercase;
+    color: var(--clr-red-100);
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+    line-height: 1;
+    text-align: center;
+    width: 5em;
+    margin: 1.3em auto 0.5em;
+  }
+  .main-content__title > span {
+    color: var(--clr-desaturated-red);
+    font-weight: 600;
+  }
+  .main-content__text {
+    color: var(--clr-red-100);
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .main-content__form  {
+    display: block;
+    text-align: center;
+  }
+  .main-content__form > form  {
+    position: relative; 
+  }
+  .main-content__form > form > input{
+    border: 1px solid var(--clr-red-100);
+    border-radius: 2em;
+    padding: 1.2em 1.5em ;
+    background: transparent;
+    width: 100%;
+    color: var(--clr-red-100);
+    outline: none;
+  }
+  button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 5em;
+    height: 3.8em;
+    outline: none;
+    border: none;
+    background: url('images/icon-arrow.svg') center no-repeat, var(--clr-gradient-darker);
+    border-radius: 2em;
+  }
   footer {
     width: 100%;
     position: fixed;
     font-size: 1.1rem;
     text-align: center;
     bottom: 1em;
-    color: var(--brightBlue);
+    color: black;
   }
   .attribution a {
     color: var(--brightBlue);
